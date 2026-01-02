@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Audio Player",
+  "version": "1.0.0",
+  "description": "Crawl and extract audio links from YouTube channels",
+  "permissions": [
+    "sidePanel",
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://ph.tinhtong.vn/*",
+    "https://www.youtube.com/*"
+  ],
+  "action": {
+    "default_title": "YouTube Audio Player",
+    "default_icon": {
+      "32": "icons/cassette-32.png",
+      "48": "icons/cassette-48.png",
+      "128": "icons/cassette-128.png"
+    }
+  },
+
+  "icons": {
+    "32": "icons/cassette-32.png",
+    "48": "icons/cassette-48.png",
+    "128": "icons/cassette-128.png"
+  },
+  "side_panel": {
+    "default_path": "side-panel.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

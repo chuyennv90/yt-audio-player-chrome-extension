@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <!-- Cassette tape body -->
+  <rect x="4" y="8" width="40" height="32" rx="3" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+  
+  <!-- Top label area -->
+  <rect x="6" y="10" width="36" height="9" rx="1.5" fill="#e8e8e8"/>
+  <text x="24" y="17" font-size="4" font-weight="bold" text-anchor="middle" fill="#333">AUDIO</text>
+  
+  <!-- Left reel -->
+  <circle cx="12" cy="24" r="6" fill="#2a2a2a" stroke="#555" stroke-width="0.5"/>
+  <circle cx="12" cy="24" r="4.5" fill="none" stroke="#888" stroke-width="0.4"/>
+  <circle cx="12" cy="24" r="3" fill="none" stroke="#888" stroke-width="0.4"/>
+  <circle cx="12" cy="24" r="1.5" fill="#555"/>
+  
+  <!-- Right reel -->
+  <circle cx="36" cy="24" r="6" fill="#2a2a2a" stroke="#555" stroke-width="0.5"/>
+  <circle cx="36" cy="24" r="4.5" fill="none" stroke="#888" stroke-width="0.4"/>
+  <circle cx="36" cy="24" r="3" fill="none" stroke="#888" stroke-width="0.4"/>
+  <circle cx="36" cy="24" r="1.5" fill="#555"/>
+  
+  <!-- Tape area -->
+  <rect x="18" y="22" width="12" height="4" fill="#333" stroke="#666" stroke-width="0.5"/>
+  
+  <!-- Play indicator -->
+  <circle cx="24" cy="34" r="1" fill="#ff4444"/>
+</svg>
