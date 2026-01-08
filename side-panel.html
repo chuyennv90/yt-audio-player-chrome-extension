@@ -17,39 +17,30 @@
         placeholder="Enter YouTube URL (channel, video, or playlist)..."
       >
       <button id="submitUrlBtn" class="btn btn-secondary">Load</button>
-      <button id="crawlBtn" class="btn btn-primary">Refresh</button>
-    </div>
-
-    <div id="loading" class="loading hidden">
-      <div class="spinner"></div>
-      <p>Crawling content...</p>
     </div>
 
     <div id="error" class="error hidden"></div>
 
     <div id="results" class="results hidden">
-      <div class="results-header">
-        <h2>Found Audio Links</h2>
-        <span id="resultCount" class="result-count">0 items</span>
-      </div>
-      
       <!-- Audio Player -->
       <div id="playerContainer" class="player-container hidden">
-        <div class="player-info">
-          <div class="now-playing">Now Playing:</div>
-          <div id="nowPlayingTitle" class="now-playing-title">-</div>
-        </div>
-        <audio id="audioPlayer" class="audio-player" controls>
+        <audio id="audioPlayer" class="audio-player">
           <source id="audioSource" src="" type="audio/mpeg">
-          Your browser does not support the audio element.
         </audio>
-        <div class="player-controls">
-          <button id="prevBtn" class="btn btn-control" title="Previous">⏮ Prev</button>
-          <button id="nextBtn" class="btn btn-control" title="Next">Next ⏭</button>
+        <div class="player-controls-inline">
+          <button id="prevBtn" class="btn btn-control-inline" title="Previous">⏮</button>
+          <button id="playPauseBtn" class="btn btn-control-inline" title="Play/Pause">▶</button>
+          <button id="nextBtn" class="btn btn-control-inline" title="Next">⏭</button>
+          <div class="now-playing-scroll">
+            <div id="nowPlayingTitle" class="now-playing-title-scroll">-</div>
+          </div>
         </div>
       </div>
 
       <ul id="resultsList" class="results-list"></ul>
+      <div id="clearButtonContainer" class="clear-button-container hidden">
+        <button id="clearPlaylistBtn" class="btn-clear">Clear Playlist</button>
+      </div>
     </div>
 
     <div id="empty" class="empty">

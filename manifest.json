@@ -6,11 +6,14 @@
   "permissions": [
     "sidePanel",
     "activeTab",
-    "tabs"
+    "tabs",
+    "storage",
+    "offscreen"
   ],
   "host_permissions": [
     "https://ph.tinhtong.vn/*",
-    "https://www.youtube.com/*"
+    "https://www.youtube.com/*",
+    "https://*.googlevideo.com/*"
   ],
   "action": {
     "default_title": "YouTube Audio Player",
